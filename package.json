@@ -1,27 +1,17 @@
 {
   "name": "eventora-server",
   "version": "1.0.0",
-  "description": "Event booking server",
-  "keywords": ["event", "booking"],
-  "license": "ISC",
-  "author": "suhani",
-  "type": "commonjs",
-  "main": "server/server.js",
+  "main": "api/index.js",
   "scripts": {
-    "start": "node server/server.js",
-    "dev": "nodemon server/server.js",
-    "vercel-build": "echo 'Build completed'"
+    "vercel-build": "echo 'Build done'"
   },
   "dependencies": {
-    "bcryptjs": "^3.0.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.3.3",
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
-    "express": "^5.2.1",
+    "bcryptjs": "^3.0.3",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.3.3",
     "nodemailer": "^8.0.4"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.14"
   }
 }
